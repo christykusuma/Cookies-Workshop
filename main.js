@@ -11,6 +11,8 @@ var sugarNumber = document.querySelector(".sugarNumber");
 var chocolateNumber = document.querySelector(".chocolateNumber");
 var lemonNumber = document.querySelector(".lemonNumber");
 
+var header = document.querySelector("h1");
+
 // Wait for document to finish loading
 document.addEventListener("DOMContentLoaded", function() {
 
@@ -31,12 +33,14 @@ document.addEventListener("DOMContentLoaded", function() {
 	addSugar.addEventListener("click", () => {
 		console.log(Cookies.get("sugarCookies"));
 
+
 		// Get the current cookie value and add by 1
 		let sugar_count = ~~Cookies.get("sugarCookies") + 1;
 		Cookies.set("sugarCookies", sugar_count);
 
 		// Update display of sugar cookie counter
 		sugarNumber.innerText = sugar_count;
+		header.innerText = "Me want more sugar cookies!";
 	})
 
 	// Wait for click on chocolate cookie counter button
@@ -49,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 		// Update display of chocolate cookie counter
 		chocolateNumber.innerText = chocolate_count;
+		header.innerText = "Me want more chocolate cookies!";
 	})
 
 	// Wait for click on lemon cookie counter button
@@ -61,10 +66,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 		// Update display of lemon cookie counter
 		lemonNumber.innerText = lemon_count;
+		header.innerText = "Me want more lemon cookies!";
 	})
 
 	// When clear button is clicked, gets rid of all the cookies
 	clearCookies.addEventListener("click", () => {
+
+		header.innerText = "Om nom nom nom.";
 
 		// Sugar cookies expire
 		Cookies.expire("sugarCookies");
