@@ -1,0 +1,58 @@
+
+body {
+	margin-top: 100px;
+	margin-left: 100px;
+}
+
+h1 {
+	font-size: 3em;
+	position: absolute;
+	right: 250px;
+}
+
+span {
+	margin-top: 80px;
+	font-size: 3em;
+	position: absolute;
+	left: 375px;
+}
+
+.cookie-image {
+	margin-top: 0;
+	width: 200px;
+	height: 200px;
+}
+
+.background-image {
+	height: 70%;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	z-index: -100;
+}
+
+.clearCookies {
+	position: absolute;
+	right: 200px;
+	top: 600px;
+	font-size: 1.5em;
+}
+
+.addLemon {
+	position: absolute;
+	top: 650px;
+	left: 290px;
+
+}
+
+.addChocolate {
+	position: absolute;
+	top: 450px;
+	left: 290px;
+}
+
+.addSugar {
+	position: absolute;
+	top: 250px;
+	left: 290px;
+}
