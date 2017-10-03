@@ -2,9 +2,11 @@
 body {
 	margin-top: 100px;
 	margin-left: 50px;
+	width: 80%;
 }
 
 h1 {
+	left: 600px;
 	font-size: 3em;
 	position: absolute;
 	right: 100px;
@@ -21,10 +23,30 @@ span {
 	margin-top: 0;
 	width: 200px;
 	height: 200px;
+	position: relative;
+	top: 0;
+	left: 0;
+	transition: all 2s;
+}
+
+.eaten {
+	left: 800px;
+	top: 260px;
+}
+
+.eaten1 {
+	top: 80px;
+	left: 800px;
+}
+
+.eaten2 {
+	top: -110px;
+	left: 800px;
 }
 
 .background-image {
 	height: 70%;
+	left: 450px;
 	right: 0;
 	bottom: 0;
 	position: absolute;
@@ -33,6 +55,7 @@ span {
 
 .clearCookies {
 	position: absolute;
+	left: 950px;
 	right: 200px;
 	top: 600px;
 	font-size: 1.5em;

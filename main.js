@@ -33,6 +33,12 @@ document.addEventListener("DOMContentLoaded", function() {
 	addSugar.addEventListener("click", () => {
 		console.log(Cookies.get("sugarCookies"));
 
+		// Move sugar cookie image
+		document.querySelector(".sugarImage").classList.add('eaten');
+		
+		setTimeout( () => {
+		document.querySelector(".sugarImage").classList.remove('eaten');
+		}, 3000);
 
 		// Get the current cookie value and add by 1
 		let sugar_count = ~~Cookies.get("sugarCookies") + 1;
@@ -47,6 +53,13 @@ document.addEventListener("DOMContentLoaded", function() {
 	addChocolate.addEventListener("click", () => {
 		console.log(Cookies.get("chocolateCookies"));
 
+		// Move chocolate cookie image
+		document.querySelector(".chocolateImage").classList.add('eaten1');
+		
+		setTimeout( () => {
+		document.querySelector(".chocolateImage").classList.remove('eaten1');
+		}, 3000);
+
 		// Get the current cookie value and add by 1
 		let chocolate_count = ~~Cookies.get("chocolateCookies") + 1;
 		Cookies.set("chocolateCookies", chocolate_count);
@@ -59,6 +72,13 @@ document.addEventListener("DOMContentLoaded", function() {
 	// Wait for click on lemon cookie counter button
 	addLemon.addEventListener("click", () => {
 		console.log(Cookies.get("lemonCookies"));
+
+		// Move lemon cookie image
+		document.querySelector(".lemonImage").classList.add('eaten2');
+		
+		setTimeout( () => {
+		document.querySelector(".lemonImage").classList.remove('eaten2');
+		}, 3000);
 
 		// Get the current cookie value and add by 1
 		let lemon_count = ~~Cookies.get("lemonCookies") + 1;
